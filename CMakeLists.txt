@@ -1,7 +1,10 @@
 project(myfirstlib)
 cmake_minimum_required(VERSION 2.8.8)
 
-include_directories("include")
+# Find Boost
+find_package(Boost REQUIRED program_options)
+
+include_directories("include" "${Boost_INCLUDE_DIRS}")
 
 # Recurse into sub directories
 add_subdirectory(lib)
