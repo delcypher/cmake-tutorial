@@ -3,7 +3,7 @@
 namespace mylib
 {
 
-// http://xkcd.com/221/
+
 int getRandomNumber()
 {
     return 4; // chosen by a fair dice roll
