@@ -7,5 +7,6 @@ find_package(Boost REQUIRED program_options)
 include_directories("include" "${Boost_INCLUDE_DIRS}")
 
 # Recurse into sub directories
+add_subdirectory("include")
 add_subdirectory(lib)
 add_subdirectory(tool)
